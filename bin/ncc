@@ -2,7 +2,7 @@
 # File: ncc (New/No C compiler)
 
 NAME="ncc"
-LIBPATH='require "lib/dsl/clang"'
+LIBPATH='require "dsl/clang"'
 
 if ARGV.empty? || ARGV.first == '--help'
   puts "Usage: #{NAME} [options] file..."
