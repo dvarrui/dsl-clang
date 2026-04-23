@@ -29,10 +29,12 @@ int main() {
 }
 ```
 
-* "Compilar" el programa: `ncc FILENAME`.
+* Usar el comando `ncc` para "compilar" el programa (`ncc FILENAME`).
 * Ejecutar `a.out`.
 
-```
+```bash
+$ ncc holamundo.c 
+
 $ ./a.out 
 Hola Mundo!
 ```
