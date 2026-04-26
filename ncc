@@ -23,8 +23,6 @@ lines = File.readlines(filename, chomp: true)
 lines.insert(0, "#!/usr/bin/env ruby")
 lines.insert(1, LIBPATH)
 
-File.open('a.out', 'w') do |file|
-  file.puts(lines)
-end
+File.open('a.out', 'w') { |file| file.puts(lines) }
 
 system("chmod +x ./a.out")
